@@ -1,11 +1,11 @@
-root {
+:root {
   --blanco: #ffffff;
   --gris1: #edf2f6;
   --gris2: #2f3848;
   --gris3: #1a202d;
   --negro: #000000;
-  --headingFont:'Raleway';
-  --textFont:  'Roboto';
+  --headingFont:'Raleway', sans-serif;
+  --textFont:  'Roboto', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -20,12 +20,12 @@ body {
   background-color: var(--gris1);
   font-size: 16px; 
   font-size: 1.6rem;
-  font-family: var(--textFont, sans-serif);
+  font-family: var(--textFont);
 }
 
 
 h1, h2 {
-  font-family: var(--headingFont, sans-serif);
+  font-family: var(--headingFont);
   font-weight: 900;
   margin: 0 0 4rem 0;
   text-align: center;
@@ -58,7 +58,7 @@ a {
   left: 0;
   padding: 1rem 3rem;
   border-radius: 1rem;
-  font-family: var(--headingFont, sans-serif  );
+  font-family: var(--headingFont);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 2.2rem;
@@ -169,7 +169,7 @@ aside  {
 .app-header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--gris2);
+  background-color:var(--gris2);
   padding: 4rem;
 }
 .user-name {
