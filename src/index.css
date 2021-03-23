@@ -123,7 +123,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .container-app {
+  .app-container {
       display: flex;
       min-height: 100vh;
   }
@@ -144,15 +144,15 @@ aside  {
   padding: 3rem;
 }
 
-.new-projecto-form {
+.new-project-form {
   margin-top: 6rem;
 }
-.new-projecto-form .input-text {
+.new-project-form .input-text {
   border-bottom: 1px solid var(--gris2);
   border-radius: 0;
   background-color: var(--gris1);
 }
-.new-projecto-form .input-text::placeholder{
+.new-project-form .input-text::placeholder{
   color: var(--gris2);
 }
 .projects {
@@ -214,7 +214,7 @@ aside  {
 }
 
 /** taskS LISTADO **/
-.container-tasks {
+.tasks-container {
   padding: 4rem;
 }
 
