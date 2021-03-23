@@ -93,6 +93,7 @@ a {
   border-radius: .5rem;
   border: none;
   transition: background-color .3s ease;
+  text-align: center;
 }
 .btn:hover {
   cursor: pointer;
@@ -265,7 +266,7 @@ aside  {
 .state button, 
 .message {
   font-weight: 900;
-  font-family: var(--textFont, sans-serif);
+  font-family: var(--textFont);
   font-size: 1rem;
   padding: .5rem;
   border-radius: .5rem;
@@ -344,7 +345,8 @@ aside  {
 }
 .field-form label {
   flex: 0 0 100px;
-  font-family: var(--textFont, sans-serif);
+  font-family: var(--textFont);
+  font-weight: bold;
 }
 .field-form input[type="password"],
 .field-form input[type="email"], 
