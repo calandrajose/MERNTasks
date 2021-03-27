@@ -181,11 +181,11 @@ aside  {
 .user-name span {
   font-weight: 900;
 }
-.nav-main a {
+.main-nav a {
   color: var(--blanco);
   text-decoration: none;
 }
-.nav-main a:first-of-type {
+.main-nav a:first-of-type {
   margin-right: 2rem;
 }
 
@@ -260,10 +260,10 @@ aside  {
   margin: 0;
 }
 
-.state {
+.status {
   margin-right: 1rem;
 }
-.state button, 
+.status button, 
 .message {
   font-weight: 900;
   font-family: var(--textFont);
@@ -296,7 +296,6 @@ aside  {
   background-color: rgb(170, 0, 0);
   color: var(--blanco);
 }
-
 
 
 .task-enter,
