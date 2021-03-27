@@ -2,6 +2,18 @@ import React, { Fragment, useState } from 'react';
 
 const NewProject = () => {
     const [create, setCreate] = useState(false);
+    const [project, setProject] = useState({
+        name:''
+    });
+
+    const {name} = project
+
+    const onChangeProject = (e)=>{
+        setProject({
+            ...project,
+            [e.target.name]: e.target.value
+        })
+    }
 
     const onClickHandler = e =>{
         setCreate(true);
@@ -10,6 +22,7 @@ const NewProject = () => {
     const onSsubmitHandler = e =>{
         e.preventDefault()
         setCreate(false);
+        
     }
 
     return (
@@ -26,6 +39,8 @@ const NewProject = () => {
                     className='input-text'
                     placeholder='Nombre del Proyecto'
                     name='name'
+                    value={name}
+                    onChange={onChangeProject}
                 />
                 <input
                     type='submit'
