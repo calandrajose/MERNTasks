@@ -22,6 +22,16 @@ const Task = ({task}) => {
                         )
                 }
             </div>
+            <div className='actions'>
+                <button
+                    type='button'
+                    className='btn btn-primary'
+                >Editar</button>
+                <button
+                    type='button'
+                    className='btn btn-secondary'
+                >Eliminar</button>
+            </div>
         </li>
     );
 };

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { Fragment, useContext } from 'react';
+import projectContext from '../../context/projects/projectContext';
 
 const TasksForm = () => {
+    const projectsContext = useContext(projectContext)
+    const { currentProject } = projectsContext;
+    if(!currentProject)return null
+
+    const [project] = currentProject
+
     return (
-        <div className='custom-form'>
+        <div className='custom-form'>   
             <form>
                 <div className='container-input'>
                     <input
